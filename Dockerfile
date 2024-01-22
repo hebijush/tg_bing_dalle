@@ -13,5 +13,6 @@ RUN chmod +x /app/entrypoint.sh
 # Default env vars
 ENV tg_token=${tg_token:-}
 ENV bing_cookie=${bing_cookie:-}
+EXPOSE 80
 
 ENTRYPOINT ["/app/entrypoint.sh"]
